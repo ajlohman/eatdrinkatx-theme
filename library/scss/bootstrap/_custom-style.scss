@@ -21,6 +21,20 @@
 
 body {
   font-family: "adobe-garamond-pro",sans-serif;
+  background:#f2f2f2;
+}
+
+// links
+a {
+	color:#EE4938;
+}
+a:hover {
+	color:#666666;
+}
+
+// containers
+.container-fluid {
+	max-width:1170px;
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
@@ -38,20 +52,25 @@ p.lg {
 }
 
 // main header
-header {
+header.main-header {
+	background:#ffffff;
+	border-bottom:1px solid #dddddd;
+	position:relative; 
+	z-index:100;
 	// logo
 	.logo {
 		width: 50px;
 		height: 50px;
-		background: #ffffff;
+		background: #333333;
 		text-align: center;
 		padding-top: 10px;
-		margin-left:10px;
+		// margin-left:10px;
 		@media (min-width: $screen-sm-min) {
 			width: 100px;
 			height: 100px;
 			padding-top: 20px;
-			margin-left:40px;
+			// margin-left:40px;
+			margin-bottom:-40px;
 		}
 	}
 	.logo img {
@@ -67,11 +86,11 @@ header {
 			text-align: right;
 			font-size: 16px;
 	    	padding: 11px 0 0 0;
-	    	margin:0px;
+	    	// margin:0px;
 			@media (min-width: $screen-sm-min) {
 				font-size: 20px;
-				padding:40px 0 0 0;
-				margin:0 40px 0 0;
+				padding:20px 0 0 0;
+				// margin:0 40px 0 0;
 			}
 			li {
 				display:inline;
@@ -83,10 +102,10 @@ header {
 				padding:0;
 			}
 			li a {
-				color:#ffffff;
+				color:#333333;
 			}
 			li a:hover {
-				color:#ffffff;
+				color:#333333;
 			}
 		}
 
@@ -98,27 +117,27 @@ header {
 .hero-img {
 	position: relative;
 	z-index:98;
-	margin-top:-50px;
+	// margin-top:-50px;
 	width:100%;
-	@media (min-width: $screen-sm-min) {
-		margin-top:-170px;
-	}
+	// @media (min-width: $screen-sm-min) {
+	// 	margin-top:-170px;
+	// }
 }
 
 // article header
 
 .article-header {
-	position: absolute;
+	// position: absolute;
 	z-index: 100;
 	width:100%;
-	text-align: center;
+	text-align: left;
 	padding-top:10%;
-	color:#ffffff;
+	color:#333333;
 	@media (max-width: 460px) {
 		padding-top:5%;
 	}
 	h1 {
-		color:#ffffff;
+		color:#333333;
 		font-size: 36px;
 		@media (max-width: 460px) {
 			font-size: 26px;
@@ -133,13 +152,31 @@ header {
 			font-size: 96px;
 		}
 		a {
-			color:#ffffff;
+			color:#333333;
 		}
 		a:hover {
-			color:#ffffff;
+			color:#333333;
 		}
 	}
 }
+
+p.category {
+	font-style:italic;
+}
+
+.vcard {
+	text-align:right;
+	padding-top:35px;
+	font-style:italic;
+}
+
+p.author {
+	font-size:24px;
+	a {
+		font-style:normal;
+	}
+}
+
 
 // some random spacing
 

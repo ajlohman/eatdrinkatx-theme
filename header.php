@@ -45,21 +45,23 @@
 
 	<body <?php body_class(); ?>>
 
-		<header class="container-fluid" style="position:relative; z-index:100;">
-			<div class="row">
-				<div class="col-xs-4">
-					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="/wp-content/uploads/2014/02/logo-atx.png" title="Eat Drink ATX"></a>
-					</div>
+		<header class="main-header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-4">
+						<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
+						<div class="logo">
+							<a href="<?php echo home_url(); ?>" rel="Eat Drink ATX"><img src="/wp-content/uploads/2014/03/logo-atx-white1.png" title="Eat Drink ATX"></a>
+						</div>
 
-					<?php // if you'd like to use the site description you can un-comment it below ?>
-					<?php // bloginfo('description'); ?>
-				</div>
-				<div class="col-xs-8">
-					<nav role="navigation">
-						<?php bones_main_nav(); ?>
-					</nav>
+						<?php // if you'd like to use the site description you can un-comment it below ?>
+						<?php // bloginfo('description'); ?>
+					</div>
+					<div class="col-xs-8">
+						<nav role="navigation">
+							<?php bones_main_nav(); ?>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</header>
