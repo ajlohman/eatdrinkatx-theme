@@ -12,4 +12,4 @@ Bones is designed to make the life of developers easier. It's built
 using HTML5 & has a strong semantic foundation. It was updated recently
 using some of the HTML5 Boilerplate's recommended markup and setup.
 
-Designed by **Eddie Machado**: http://themble.com/bones
+Designed by **Eddie Machado**: https://github.com/eddiemachado/bones
