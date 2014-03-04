@@ -4,7 +4,7 @@ __Eat Drink ATX is a guide to finding the best spots in Austin,TX.__
 Designed by **Andrew Lohman** and **David Baker**
 
 This is the wordpress theme for www.eatdrinkatx.com. It uses Bones as the
-started theme.
+starter theme.
 
 More information about Bones:
 
