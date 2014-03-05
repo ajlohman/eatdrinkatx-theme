@@ -22,6 +22,7 @@
 body {
   font-family: "adobe-garamond-pro",sans-serif;
   background:#f2f2f2;
+  font-size:16px;
 }
 
 // links
@@ -40,7 +41,7 @@ a:hover {
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
   font-family: "liquor-store",sans-serif;
   text-transform:uppercase;
-  margin:0 0 20px 0;
+  margin:0;
 }
 
 
@@ -64,6 +65,7 @@ header.main-header {
 		background: #333333;
 		text-align: center;
 		padding-top: 10px;
+		margin-bottom:-10px;
 		// margin-left:10px;
 		@media (min-width: $screen-sm-min) {
 			width: 100px;
@@ -130,18 +132,16 @@ header.main-header {
 	// position: absolute;
 	z-index: 100;
 	width:100%;
-	text-align: left;
-	padding-top:10%;
+	text-align: center;
+	padding:40px 0 20px 0;
 	color:#333333;
-	@media (max-width: 460px) {
-		padding-top:5%;
+	@media (min-width: $screen-sm-min) {
+		text-align: left;
+		padding:100px 0;
 	}
 	h1 {
 		color:#333333;
 		font-size: 36px;
-		@media (max-width: 460px) {
-			font-size: 26px;
-		}
 		@media (min-width: $screen-sm-min) {
 			font-size: 56px;
 		}
@@ -165,17 +165,41 @@ p.category {
 }
 
 .vcard {
-	text-align:right;
-	padding-top:35px;
+	text-align:center;
+	padding-top:0;
 	font-style:italic;
-}
-
-p.author {
-	font-size:24px;
-	a {
-		font-style:normal;
+	@media (min-width: $screen-sm-min) {
+		text-align: right;
+		padding-top:30px;
+	}
+	@media (min-width: $screen-md-min) {
+		text-align: right;
+		padding-top:30px;
+	}
+	.author {
+		font-size:16px;
+		line-height: 26px;
+		@media (min-width: $screen-md-min) {
+			font-size:24px;
+			line-height: 40px;
+		}
+		a {
+			font-style:normal;
+		}
+	}
+	span.slash {
+		color: #ddd;
+		font-size: 26px;
+		line-height: 26px;
+		padding: 2px;
+		display: inline;
+		vertical-align: middle;
 	}
 }
+
+
+
+
 
 
 // some random spacing

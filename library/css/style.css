@@ -2615,7 +2615,8 @@ input[type="button"].btn-block {
     display: none !important; } }
 body {
   font-family: "adobe-garamond-pro",sans-serif;
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  font-size: 16px; }
 
 a {
   color: #EE4938; }
@@ -2629,7 +2630,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "liquor-store",sans-serif;
   text-transform: uppercase;
-  margin: 0 0 20px 0; }
+  margin: 0; }
 
 /* #wpadminbar {display:none} */
 p {
@@ -2648,7 +2649,8 @@ header.main-header {
     height: 50px;
     background: #333333;
     text-align: center;
-    padding-top: 10px; }
+    padding-top: 10px;
+    margin-bottom: -10px; }
     @media (min-width: 768px) {
       header.main-header .logo {
         width: 100px;
@@ -2688,18 +2690,16 @@ header.main-header {
 .article-header {
   z-index: 100;
   width: 100%;
-  text-align: left;
-  padding-top: 10%;
+  text-align: center;
+  padding: 40px 0 20px 0;
   color: #333333; }
-  @media (max-width: 460px) {
+  @media (min-width: 768px) {
     .article-header {
-      padding-top: 5%; } }
+      text-align: left;
+      padding: 100px 0; } }
   .article-header h1 {
     color: #333333;
     font-size: 36px; }
-    @media (max-width: 460px) {
-      .article-header h1 {
-        font-size: 26px; } }
     @media (min-width: 768px) {
       .article-header h1 {
         font-size: 56px; } }
@@ -2718,14 +2718,33 @@ p.category {
   font-style: italic; }
 
 .vcard {
-  text-align: right;
-  padding-top: 35px;
+  text-align: center;
+  padding-top: 0;
   font-style: italic; }
-
-p.author {
-  font-size: 24px; }
-  p.author a {
-    font-style: normal; }
+  @media (min-width: 768px) {
+    .vcard {
+      text-align: right;
+      padding-top: 30px; } }
+  @media (min-width: 992px) {
+    .vcard {
+      text-align: right;
+      padding-top: 30px; } }
+  .vcard .author {
+    font-size: 16px;
+    line-height: 26px; }
+    @media (min-width: 992px) {
+      .vcard .author {
+        font-size: 24px;
+        line-height: 40px; } }
+    .vcard .author a {
+      font-style: normal; }
+  .vcard span.slash {
+    color: #ddd;
+    font-size: 26px;
+    line-height: 26px;
+    padding: 2px;
+    display: inline;
+    vertical-align: middle; }
 
 .space-lg {
   padding: 0; }
