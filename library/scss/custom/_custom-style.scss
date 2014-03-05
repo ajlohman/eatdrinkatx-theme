@@ -1,0 +1,222 @@
+// Custom styles
+
+
+// this deletes the top margin of the wordpress adminbar
+// html {
+// 	margin-top: 0px !important;
+// 	@media (min-width: $screen-sm-min) {
+// 		margin-top: 0px !important;
+// 	}
+// 	@media (min-width: $screen-md-min) {
+// 		margin-top: 0px !important;
+// 	}
+// 	@media (min-width: $screen-lg-min) {
+// 		margin-top: 0px !important;
+// 	}
+// 	// extra media queries I needed to add
+// 	@media screen and (max-width: 782px) {
+// 		margin-top: 0px !important;
+// 	}
+// }
+
+body {
+  font-family: "adobe-garamond-pro",sans-serif;
+  background:#f2f2f2;
+}
+
+// links
+a {
+	color:#EE4938;
+}
+a:hover {
+	color:#666666;
+}
+
+// containers
+.container-fluid {
+	max-width:1170px;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+  font-family: "liquor-store",sans-serif;
+  text-transform:uppercase;
+  margin:0 0 20px 0;
+}
+
+
+/* #wpadminbar {display:none} */
+
+p {margin: 0 0;}
+p.lg {
+	font-size:21px;
+}
+
+// main header
+header.main-header {
+	background:#ffffff;
+	border-bottom:1px solid #dddddd;
+	position:relative; 
+	z-index:100;
+	// logo
+	.logo {
+		width: 50px;
+		height: 50px;
+		background: #333333;
+		text-align: center;
+		padding-top: 10px;
+		// margin-left:10px;
+		@media (min-width: $screen-sm-min) {
+			width: 100px;
+			height: 100px;
+			padding-top: 20px;
+			// margin-left:40px;
+			margin-bottom:-40px;
+		}
+	}
+	.logo img {
+		width:30px;
+		@media (min-width: $screen-sm-min) {
+			width:60px;
+		}
+	}
+
+	// main nav
+	.nav {
+		ul {
+			text-align: right;
+			font-size: 16px;
+	    	padding: 11px 0 0 0;
+	    	// margin:0px;
+			@media (min-width: $screen-sm-min) {
+				font-size: 20px;
+				padding:20px 0 0 0;
+				// margin:0 40px 0 0;
+			}
+			li {
+				display:inline;
+				list-style: none;
+				padding:0 0 0 20px;
+				color:#ffffff;
+			}
+			li:first-child {
+				padding:0;
+			}
+			li a {
+				color:#333333;
+			}
+			li a:hover {
+				color:#333333;
+			}
+		}
+
+	}
+}
+
+// her0 image used on every article
+
+.hero-img {
+	position: relative;
+	z-index:98;
+	// margin-top:-50px;
+	width:100%;
+	// @media (min-width: $screen-sm-min) {
+	// 	margin-top:-170px;
+	// }
+}
+
+// article header
+
+.article-header {
+	// position: absolute;
+	z-index: 100;
+	width:100%;
+	text-align: left;
+	padding-top:10%;
+	color:#333333;
+	@media (max-width: 460px) {
+		padding-top:5%;
+	}
+	h1 {
+		color:#333333;
+		font-size: 36px;
+		@media (max-width: 460px) {
+			font-size: 26px;
+		}
+		@media (min-width: $screen-sm-min) {
+			font-size: 56px;
+		}
+		@media (min-width: $screen-md-min) {
+			font-size: 76px;
+		}
+		@media (min-width: $screen-lg-min) {
+			font-size: 96px;
+		}
+		a {
+			color:#333333;
+		}
+		a:hover {
+			color:#333333;
+		}
+	}
+}
+
+p.category {
+	font-style:italic;
+}
+
+.vcard {
+	text-align:right;
+	padding-top:35px;
+	font-style:italic;
+}
+
+p.author {
+	font-size:24px;
+	a {
+		font-style:normal;
+	}
+}
+
+
+// some random spacing
+
+.space-lg {
+ 	padding:0;
+ 	@media (min-width: $screen-sm-min) {
+		padding:40px 0 0 0;
+	}
+}
+
+.space-sm {
+  padding:20px 0;
+}
+
+// image captions
+
+.caption {
+	padding-top:60px;
+}
+
+figcaption {
+  font-size: 14px;
+  font-style: italic;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin:10px 0;
+  padding:10px 0;
+}
+
+figcaption.left {
+	text-align:right;
+}
+
+figcaption.right {
+	text-align:left;
+}
+
+
+
+
+
+
+
