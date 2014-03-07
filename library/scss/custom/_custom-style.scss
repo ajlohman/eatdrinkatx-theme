@@ -83,7 +83,7 @@ header.main-header {
 	}
 
 	// main nav
-	.nav {
+	nav {
 		ul {
 			text-align: right;
 			font-size: 16px;
@@ -130,6 +130,7 @@ header.main-header {
 
 .article-header {
 	// position: absolute;
+	overflow:hidden;
 	z-index: 100;
 	width:100%;
 	text-align: center;
@@ -137,7 +138,7 @@ header.main-header {
 	color:#333333;
 	@media (min-width: $screen-sm-min) {
 		text-align: left;
-		padding:100px 0;
+		padding:120px 0 40px 0;
 	}
 	h1 {
 		color:#333333;
@@ -236,6 +237,14 @@ figcaption.left {
 
 figcaption.right {
 	text-align:left;
+}
+
+//footer 
+footer.footer {
+	background:#ffffff;
+	border-top:1px solid #dddddd;
+	margin:80px 0 0 0;
+	padding:100px 0;
 }
 
 

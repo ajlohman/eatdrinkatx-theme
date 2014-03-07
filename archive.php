@@ -1,12 +1,30 @@
-<?php get_header(); ?>
+<?php
+/*
+Template Name: Archives
+*/
+get_header(); ?>
 
-			<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12" style="background:pink; padding-top:120px;">
 
-						<div id="main" class="eightcol first clearfix" role="main">
+							<?php the_post(); ?>
+								<h1 class="entry-title"><?php the_title(); ?></h1>
+								
+								<?php get_search_form(); ?>
+								
+								<!-- <h2>Archives by Month:</h2>
+								<ul>
+									<?php wp_get_archives('type=monthly'); ?>
+								</ul> -->
+								
+								<h2>Categories</h2>
+								<ul>
+									 <?php wp_list_categories(); ?>
+								</ul>
 
-							<?php if (is_category()) { ?>
+							<!-- <?php if (is_category()) { ?>
 								<h1 class="archive-title h2">
 									<span><?php _e( 'Posts Categorized:', 'bonestheme' ); ?></span> <?php single_cat_title(); ?>
 								</h1>
@@ -97,12 +115,12 @@
 
 							<?php endif; ?>
 
-						</div>
+						</div> -->
 
-						<?php get_sidebar(); ?>
+						<!-- <?php get_sidebar(); ?> -->
 
-								</div>
-
+					</div>
+				</div>
 			</div>
 
 <?php get_footer(); ?>

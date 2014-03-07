@@ -2662,24 +2662,24 @@ header.main-header {
     @media (min-width: 768px) {
       header.main-header .logo img {
         width: 60px; } }
-  header.main-header .nav ul {
+  header.main-header nav ul {
     text-align: right;
     font-size: 16px;
     padding: 11px 0 0 0; }
     @media (min-width: 768px) {
-      header.main-header .nav ul {
+      header.main-header nav ul {
         font-size: 20px;
         padding: 20px 0 0 0; } }
-    header.main-header .nav ul li {
+    header.main-header nav ul li {
       display: inline;
       list-style: none;
       padding: 0 0 0 20px;
       color: #ffffff; }
-    header.main-header .nav ul li:first-child {
+    header.main-header nav ul li:first-child {
       padding: 0; }
-    header.main-header .nav ul li a {
+    header.main-header nav ul li a {
       color: #333333; }
-    header.main-header .nav ul li a:hover {
+    header.main-header nav ul li a:hover {
       color: #333333; }
 
 .hero-img {
@@ -2688,6 +2688,7 @@ header.main-header {
   width: 100%; }
 
 .article-header {
+  overflow: hidden;
   z-index: 100;
   width: 100%;
   text-align: center;
@@ -2696,7 +2697,7 @@ header.main-header {
   @media (min-width: 768px) {
     .article-header {
       text-align: left;
-      padding: 100px 0; } }
+      padding: 120px 0 40px 0; } }
   .article-header h1 {
     color: #333333;
     font-size: 36px; }
@@ -2771,3 +2772,9 @@ figcaption.left {
 
 figcaption.right {
   text-align: left; }
+
+footer.footer {
+  background: #ffffff;
+  border-top: 1px solid #dddddd;
+  margin: 80px 0 0 0;
+  padding: 100px 0; }

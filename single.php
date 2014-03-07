@@ -10,7 +10,7 @@
 			<div class="row">
 				<header class="article-header">
 					<div class="col-sm-8">
-						<p class="category"><?php printf( __( '%4$s', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));?></p>
+						<p class="category"><?php printf( __( 'Published in %4$s', 'bonestheme' ), get_the_time('Y-m-j'), get_the_time(get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', '));?></p>
 						<h1 itemprop="headline"><?php the_title(); ?></h1>
 					</div>
 								
@@ -33,32 +33,40 @@
 			<?php the_content(); ?>
 		</section>
 
+		<!-- Tags
 		<footer class="article-footer">
 			<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
-		</footer>
+		</footer> -->
 
 		<?php comments_template(); ?>
 
 	</article>
 
-	<!-- page not found -->
-		<article id="post-not-found" class="hentry clearfix">
-				<header class="article-header">
-					<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-			</header>
-				<section class="entry-content">
-					<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-			</section>
-			<footer class="article-footer">
-					<p><?php _e( 'This is the error message in the index.php template.', 'bonestheme' ); ?></p>
-			</footer>
-		</article>
+		<?php endwhile; ?>
 
-	<?php endif; ?>
+			<?php else : ?>
 
-	<!-- start sidebar -->
-	<?php get_sidebar(); ?>
+				<article id="post-not-found" class="hentry clearfix">
+						<header class="article-header">
+							<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
+						</header>
+						<section class="entry-content">
+							<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
+						</section>
+						<footer class="article-footer">
+								<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
+						</footer>
+				</article>
 
-	<!-- start footer -->
-	<?php get_footer(); ?>
+			<?php endif; ?>
 
+		</div>
+
+		<!-- start sidebar 
+		<?php get_sidebar(); ?> -->
+
+	</div>
+
+</div>
+
+<?php get_footer(); ?>
