@@ -27,7 +27,7 @@ body {
 
 // links
 a {
-	color:#EE4938;
+	color:#bc9850;
 }
 a:hover {
 	color:#666666;
@@ -130,14 +130,15 @@ header.main-header {
 
 .article-header {
 	// position: absolute;
+	// background:pink;
 	overflow:hidden;
-	z-index: 100;
+	z-index: 99;
 	width:100%;
 	text-align: center;
 	padding:40px 0 20px 0;
 	color:#333333;
 	@media (min-width: $screen-sm-min) {
-		text-align: left;
+		// text-align: left;
 		padding:120px 0 40px 0;
 	}
 	h1 {
@@ -225,8 +226,8 @@ p.category {
 figcaption {
   font-size: 14px;
   font-style: italic;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid #ddd;
+  // border-bottom: 1px solid #eee;
   margin:10px 0;
   padding:10px 0;
 }
